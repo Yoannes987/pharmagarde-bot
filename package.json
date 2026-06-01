@@ -4,10 +4,12 @@
   "description": "Bot WhatsApp pour les pharmacies de garde à Lomé",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "npx puppeteer cookies || true"
   },
   "dependencies": {
     "whatsapp-web.js": "^1.26.0",
-    "qrcode-terminal": "^0.12.0"
+    "qrcode-terminal": "^0.12.0",
+    "puppeteer": "^22.10.0"
   }
 }
